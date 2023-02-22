@@ -2,6 +2,7 @@ Creiamo un form che chieda:
 nome del passeggero
 il numero dei chilometri da percorrere
 l'età del passeggero.
+Salviamo gli inputi in 3 variabili differenti 
 
 Creiamo una variabile che contenga il prezzo del ticketPrice (chilometri * 0,21 €)
 
