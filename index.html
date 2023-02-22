@@ -9,11 +9,11 @@
     <title>La tua prenotazione</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container flex">
  <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO </h1>  
 
  <!-- form -->
- <form action="/" method="get">
+<!--  <form action="/" method="get" class="container-small flex"> -->
 <!--     <label for="input-name">Nome Cognome</label>
     <input type="text" name="name" id="input-name">
  -->
@@ -22,14 +22,14 @@
 
     <label for="age-range">Fascia di età</label>
     <select name="age" id="age-range">
-        <option value="over18">Maggiorenne</option>
-        <option value="under18">Minorenne</option>
-        <option value="over65">Over 65</option>
+        <option value="over18" class="over18">Maggiorenne</option>
+        <option value="under18" class="under18">Minorenne</option>
+        <option value="over65" class="over65">Over 65</option>
       </select>
 
       <input type="submit" value="Genera" id="submit-btn">
 <!--       <input type="reset" value="Annulla" id="reset-btn"> -->
- </form>
+<!--  </form> -->
 </div>
  <!-- /form -->
 
