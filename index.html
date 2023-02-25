@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,33 +9,42 @@
 
     <title>La tua prenotazione</title>
 </head>
+
 <body>
-    <div class="container flex">
- <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO </h1>  
+    <div class="container">
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO </h1>
+        <div class="ticket-form">
+            <!-- form -->
+            <!--  <form action="/" method="get" class="container-small flex"> -->
+            <label for="input-name">Nome Cognome</label>
+            <input type="text" name="name" id="input-name">
 
- <!-- form -->
-<!--  <form action="/" method="get" class="container-small flex"> -->
-<!--     <label for="input-name">Nome Cognome</label>
-    <input type="text" name="name" id="input-name">
- -->
-    <label for="input-distance">Km da percorrere</label>
-    <input type="number" name="distance" id="input-distance" value="">
+            <label for="input-distance">Km da percorrere</label>
+            <input type="number" name="distance" id="input-distance" value="">
 
-    <label for="age-range">Fascia di età</label>
-    <select name="age" id="age-range">
-        <option value="over18" class="over18">Maggiorenne</option>
-        <option value="under18" class="under18">Minorenne</option>
-        <option value="over65" class="over65">Over 65</option>
-      </select>
+            <label for="age-range">Fascia di età</label>
+            <select name="age" id="age-range">
+                <option value="over18">Maggiorenne</option>
+                <option value="under18">Minorenne</option>
+                <option value="over65">Over 65</option>
+            </select>
+            <div class="btn">
+                <button id="submit-btn"> Genera</button>
+                <button type="reset" id="reset-btn">Annulla<button>
+            </div>
+            <!--  </form> -->
+        </div>
 
-      <input type="submit" value="Genera" id="submit-btn">
-<!--       <input type="reset" value="Annulla" id="reset-btn"> -->
-<!--  </form> -->
-</div>
- <!-- /form -->
+        <!-- ticket result -->
+        <div class="ticket">
+
+        </div>
+    </div>
+    <!-- /form -->
 
 
 
- <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
