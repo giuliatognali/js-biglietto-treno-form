@@ -1,12 +1,18 @@
 'use strict';
 
-//definizione variabili presneti nel ticket form 
+//definizione variabili presenti nel ticket form 
 const inputName = document.getElementById('input-name');
 const inputDistance = document.getElementById('input-distance');
 const ageRange = document.getElementById('age-range');
 const submitBtn = document.getElementById('submit-btn');
 const resetBtn = document.getElementById('reset-btn');
 
+//definizione variabili nel ticket generato
+const textName = document.getElementById('text-name');
+const textOffer = document.getElementById('text-offer');
+const numberWagon = document.getElementById('number-wagon');
+const cpCode = document.getElementById('cp-code');
+const textTicketPrice = document.getElementById('text-ticket-price');
 
 submitBtn.addEventListener('click',
     function () {
