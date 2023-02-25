@@ -11,24 +11,27 @@ const resetBtn = document.getElementById('reset-btn');
 submitBtn.addEventListener('click',
     function () {
 
-        //valore input
-        const inputNameValue = inputName.value;
-        const inputDistanceValue = Number(inputDistance.value);
-        const ageRangeValue = ageRange.value;
+    //valore input
+    const inputNameValue = inputName.value;
+    const inputDistanceValue = Number(inputDistance.value);
+    const ageRangeValue = ageRange.value;
 
-        //prezzo del biglietto
-        let ticketPrice = 0.21 * inputDistanceValue;
+    //prezzo del biglietto
+    let ticketPrice = 0.21 * inputDistanceValue;
 
-        //condizioni sconto biglietto
-        if (ageRangeValue === 'under18') {
+    //condizioni sconto biglietto
+    if (ageRangeValue === 'under18') {
             ticketPrice = ticketPrice - ticketPrice * 0.2;
-        }
-        else if (ageRangeValue === 'over65') {
-            ticketPrice = ticketPrice - ticketPrice * 0.4;
-        }
+    }
+    else if (ageRangeValue === 'over65') {
+        ticketPrice = ticketPrice - ticketPrice * 0.4;
+    }
+    //ticketprice con solo due decimali dopo la virgola
+    ticketPrice =ticketPrice.toFixed(2);
 
-        console.log(inputNameValue, inputDistanceValue, ageRangeValue);
-        console.log(ticketPrice);
+    console.log(inputNameValue, inputDistanceValue, ageRangeValue);
+    console.log(ticketPrice);
+
     }
 )
 
