@@ -16,47 +16,58 @@
         <div class="ticket-form">
             <!-- form -->
             <!--  <form action="/" method="get" class="container-small flex"> -->
-            <label for="input-name">Nome Cognome</label>
-            <input type="text" name="name" id="input-name">
-
-            <label for="input-distance">Km da percorrere</label>
-            <input type="number" name="distance" id="input-distance" value="">
-
-            <label for="age-range">Fascia di età</label>
-            <select name="age" id="age-range">
-                <option value="over18">Maggiorenne</option>
-                <option value="under18">Minorenne</option>
-                <option value="over65">Over 65</option>
-            </select>
-            <div class="btn">
-                <button id="submit-btn"> Genera</button>
-                <button type="reset" id="reset-btn">Annulla<button>
+            <div class="input-container flex">
+                <div class="input flex">
+                    <label for="input-name">Nome Cognome</label>
+                    <input type="text" name="name" id="input-name">
+                </div>
+                <div class="input flex">
+                    <label for="input-distance">Km da percorrere</label>
+                    <input type="number" name="distance" id="input-distance">
+                </div>
+                <div class="input flex">
+                    <label for="age-range">Fascia di età</label>
+                    <select name="age" id="age-range">
+                        <option value="over18">Maggiorenne</option>
+                        <option value="under18">Minorenne</option>
+                        <option value="over65">Over 65</option>
+                    </select>
+                </div>
             </div>
-            <!--  </form> -->
+            <div class="container-btn flex">
+                <button class=btn id="submit-btn"> Genera</button>
+                <button class=btn type="reset" id="reset-btn">Annulla<button>
+            </div>
         </div>
-
+        <!--  </form> -->
         <!-- ticket result -->
-        <div class="ticket">
+        <div class="new-ticket">
             <h1>IL TUO BIGLIETTO</h1>
-            <div>
-                <h3>NOME PASSEGGERO</h3>
-                <p id="text-name">nome passeggero</p>
+            <div class="output-container">
+                <h2>DETTAGLIO PASSEGGERI</h2>
+                <div class="result flex">
+                
+                <div class="flex output name-container">
+                    <h3>NOME PASSEGGERO</h3>
+                    <h4 id="text-name">nome passeggero</h4>
+                </div>
+                <div class="flex output">
+                    <h3>Offerta</h3>
+                    <p id="text-offer">Offerta biglietto</p>
+                </div>
+                <div class="flex output">
+                    <h3>Carrozza</h3>
+                    <p id="number-wagon">Numero carrozza</p>
+                </div>
+                <div class="flex output">
+                    <h3>Codice CP</h3>
+                    <p id="cp-code">Codice CP</p>
+                </div>
+                <div class="flex output">
+                    <h3>Costo biglietto</h3>
+                    <p id="text-ticket-price">Costo biglietto</p>
+                </div>
             </div>
-            <div>
-                <h3>Offerta</h3>
-                <p id="text-offer">Offerta biglietto</p>
-            </div>
-            <div>
-                <h3>Carrozza</h3>
-                <p id="number-wagon">Numero carrozza</p>
-            </div>
-            <div>
-                <h3>Codice CP</h3>
-                <p id="cp-code">Codice CP</p>
-            </div>
-            <div>
-                <h3>Costo biglietto</h3>
-                <p id="text-ticket-price">Costo biglietto</p>
             </div>
         </div>
     </div>
